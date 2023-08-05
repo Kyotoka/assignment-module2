@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JUST CLICK IT</title>
+</head>
+<body>
+  <button id="clickHere">Click Here</button>
+  <p id="paragraphCount">Count: 0</p>
+  <script>
+    const clickHere = document.getElementById('clickHere');
+    const paragraphCount = document.getElementById('paragraphCount');
+    let count = 0;
+    clickHere.addEventListener('click', () => {
+      count++;
+      paragraphCount.textContent = `Count: ${count}`;
+    });
+  </script>
+</body>
+</html>

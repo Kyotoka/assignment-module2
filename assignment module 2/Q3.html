@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Switch Image</title>
+</head>
+<body>
+  <img id="imageElement" src="ichigo-kurosaki-og.jpg" alt="1st Image">
+  <button id="button1">Switch to the 1st Image</button>
+  <button id="button2">Switch to the 2nd Image</button>
+  <script>
+    const imageElement = document.getElementById('imageElement');
+    const button1 = document.getElementById('button1');
+    const button2 = document.getElementById('button2');
+
+    button1.addEventListener('click', () => {
+      imageElement.src = 'ichigo-kurosaki-og.jpg';
+    });
+
+    button2.addEventListener('click', () => {
+      imageElement.src = 'white.jpg';
+    });
+  </script>
+</body>
+</html> 

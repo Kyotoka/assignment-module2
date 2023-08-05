@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Example Of DOM Manipulation</title>
+</head>
+<body>
+  <button id="changecontent">Click</button>
+  <div id="div">Click to change</div>
+  <script>
+    const changecontent = document.getElementById('changecontent');
+    const div = document.getElementById('div');
+
+    changecontent.addEventListener('click', () => {
+      div.textContent = "Attempt to change was a succsess";
+    });
+  </script>
+</body>
+</html>
